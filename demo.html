@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Event Booking System</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+  <header class="bg-blue-600 text-white p-4 text-center text-2xl">
+    Event Booking System
+  </header>
+
+  <main class="p-4 max-w-4xl mx-auto">
+    <section id="calendar" class="mb-8">
+      <h2 class="text-xl mb-2 font-semibold">Select a Date</h2>
+      <div id="calendar-container" class="bg-white shadow-md p-4 rounded"></div>
+    </section>
+
+    <!-- Booking Form Section -->
+    <section id="booking-form">
+      <h2 class="text-xl mb-2 font-semibold">Book Your Event</h2>
+      <form id="form" class="bg-white shadow-md p-4 rounded space-y-4">
+        <input type="text" placeholder="Name" required class="w-full p-2 border rounded" />
+        <input type="email" placeholder="Email" required class="w-full p-2 border rounded" />
+        <input type="tel" placeholder="Contact Number" required class="w-full p-2 border rounded" />
+        <textarea placeholder="Event Details" required class="w-full p-2 border rounded"></textarea>
+        <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Submit</button>
+        <p id="confirmation" class="text-green-600 font-medium hidden">Booking Confirmed!</p>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
